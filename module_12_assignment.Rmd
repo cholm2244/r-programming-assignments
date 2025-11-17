@@ -1,0 +1,33 @@
+---
+title: "My R Markdown Primer"
+author: "Colin Holm"
+date: "2025-11-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+R markdown allows you to easily annotate R script and then convert it into other formats using the knit feature. This feature allows you to turn R code into easily presentable word documents, html documents, and more. R Markdown also allows you to title and display the author and date of code.
+
+
+```{LaTex math}
+\[ x^n + y^n = z^n \]
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{Library and plot}
+install.packages('ggplot2')
+library(ggplot2)
+head(mtcars)
+my_plot <- ggplot(mtcars, aes(mpg, factor(cyl))) + geom_point()
+my_plot
+```
+
+
